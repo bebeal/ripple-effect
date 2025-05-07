@@ -1,18 +1,29 @@
-# Ripple Effect
+# @bebeal/ripple-effect
 
-Simple ripple effect animation component.
+Ripple flash effect for clickables
 
 ## Setup
 
 ```bash
-yarn install
-yarn dev
+npm install @bebeal/ripple-effect
 ```
 
 ## Usage
 
 ```tsx
-import { RippleEffect } from './components/RippleEffect'
+import { useRippleEffect } from '@bebeal/ripple-effect';
 
-<RippleEffect />
+const Button = () => {
+  const { createRippleEffect } = useRippleEffect();
+
+  const onClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    createRippleEffect(e);
+  };
+
+  return <button onClick={onClick}>Click me</button>;
+};
 ```
+
+## License
+
+MIT
