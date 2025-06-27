@@ -2,6 +2,8 @@
 
 Ripple flash effect for clickables
 
+![Ripple Effect](./demo/ripple-effect.gif)
+
 ## Setup
 
 ```bash
